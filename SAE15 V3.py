@@ -7,7 +7,7 @@ import folium  #importe folium pour créer des cartes
 import webbrowser  #importe webbrowser pour ouvrir des fichiers html dans le navigateur
 
 #1.lecture du fichier csv
-chemin_fichier = "C:\\Users\\vosnitia\\Downloads\\experimentations_5G.csv"  #définit le chemin du fichier csv
+chemin_fichier = "C:/experimentations_5G.csv"  #définit le chemin du fichier csv
 donnees = pd.read_csv(chemin_fichier, sep=';', encoding='cp1252')  #lit le fichier csv avec le bon séparateur et encodage
 
 #2.nettoyage des données
@@ -80,4 +80,5 @@ carte.save("carte_5G.html")  #sauvegarde la carte en fichier html
 #8.ouverture automatique du tableau dans le navigateur
 webbrowser.open("synthese_5G.html")  #ouvre le fichier html de la synthèse dans le navigateur
 
-print("✅ tableau ouvert dans le navigateur (synthese_5G.html)")  #affiche un message de confirmation
+print("tableau ouvert dans le navigateur (synthese_5G.html)")  #affiche un message de confirmation
+
